@@ -33,7 +33,7 @@ A `typescript` / `react` boilerplate bundled with `webpack`. Style and theme man
   - `package.json`: name, description, repository
   - `public/index.html`: meta desc, title
   - `public/site.webmanifest`: name, short_name
-  - `public/`: favicons
+  - `public/`: favicons (https://realfavicongenerator.net/)
 
 
 - Remove old upstream and add your own:
@@ -59,3 +59,14 @@ Refer to the [documentation](https://github.com/Groupe-Citypassenger-Inc/Documen
 ## Lint
 
 The project comes with a pre-configured eslint for `react` and `typescript`. The style guide comes from [airbnb](https://github.com/airbnb/javascript).
+
+## Proxy
+
+A dedicated proxy is used by the development server to request the CityPassenger pre-production. It configuration is specified in `webpack.config.js` :
+
+```js
+proxy: {
+      '/ws/**': { target: 'https://preprod.citypassenger.com', secure: false },
+      '/Accounts/**': { target: 'https://preprod.citypassenger.com', secure: false, headers: { host: 'preprod.citypassenger.com' } },
+    },
+```
