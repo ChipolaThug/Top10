@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''), url('../fonts/ubuntu-v15-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''), url('../fonts/ubuntu-v15-latin-500.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''), url('../fonts/ubuntu-v15-latin-700.woff2') format('woff2');
+}
+
+#root {
+  font-family: 'Ubuntu', sans-serif;
+}
