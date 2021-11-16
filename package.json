@@ -2,7 +2,7 @@
   "name": "react-boilerplate",
   "version": "0.0.1",
   "homepage": ".",
-  "description": "",
+  "description": "A typescript / react boilerplate bundled with webpack",
   "main": "src/index.tsx",
   "repository": "https://github.com/Groupe-Citypassenger-Inc/react-boilerplate",
   "author": "CityPassenger",
