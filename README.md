@@ -46,7 +46,7 @@ Now you just have to develop your application 👌.
 
 ## Development
 
-Refer to the [documentation](https://github.com/Groupe-Citypassenger-Inc/Documentation#comment-d%C3%A9velopper-des-projets-front-end) for pre-requisites and good practices.
+Refer to the [documentation](https://github.com/Groupe-Citypassenger-Inc/Documentation#comment-d%C3%A9velopper-des-projets-front-end-) for pre-requisites and good practices.
 
 ## Build
 
