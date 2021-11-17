@@ -70,3 +70,95 @@ proxy: {
       '/Accounts/**': { target: 'https://preprod.citypassenger.com', secure: false, headers: { host: 'preprod.citypassenger.com' } },
     },
 ```
+
+## Theming
+
+The theme management is integrated in the boilerplate.
+
+### How it works
+
+Material UI exposes a `ThemeProvider` component to manage themes. This component must be used at the root of the application:
+
+```jsx
+ReactDOM.render(
+  <ThemeProvider theme={contextValue.theme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById('root')
+);
+```
+
+This component accepts a `theme` parameter of type `Theme`.
+A `Theme` can be created using the :
+
+```ts
+createTheme({ option: ThemeOption }) : Theme
+```
+
+To simplify the code, the theme management is isolated in a dedicated file `CustomThemeProvider.js`.
+Imported as follows in `ìndex.jsx`: 
+
+```js
+ReactDOM.render(
+  <CustomThemeProvider>
+      <App />
+  </CustomThemeProvider>,
+  document.getElementById('root')
+);
+```
+
+and used as follows:
+
+```js
+const { themeName, toggleTheme } = useContext(CustomThemeContext);
+```
+
+### How to customize themes 
+
+The `option` object, specified when creating a theme, contains the following attributes: 
+
+```js
+{
+  palette: {},
+  typography: {},
+  spacing: {},
+  breakpoints: {},
+  zIndex: {},
+  transitions: {},
+  components: {},
+}
+```
+
+See https://mui.com/customization/theming/#theme-configuration-variables for more info.
+
+For example to specify the primary color of the application, simply write:
+```js
+const myTheme = createTheme({
+  palette: {
+    primary: { main: '#39499c' },
+  },
+});
+```
+
+or to customize a MUI component:
+
+```js
+const myTheme = createTheme({
+  components: {
+    MuiButton: {
+      variants: [
+        {
+          props: { variant: 'navigation' },
+          style: {
+            borderRadius: '10px',
+            backgroundColor: '#DDE0EE',
+            color: '#39499c',
+          }
+        }
+      ]
+    }
+  },
+});
+```
+
+More info: https://mui.com/customization/theming/
