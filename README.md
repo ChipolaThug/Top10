@@ -14,7 +14,7 @@ A `typescript` / `react` boilerplate bundled with `webpack`. Style and theme man
 - Clone the repository:
 
   ```bash
-  git clone https://github.com/Groupe-Citypassenger-Inc/react-boilerplate
+  git clone https://github.com/Groupe-Citypassenger-Inc/react-boilerplate PROJECT_NAME
   ```
 
 - Install dependencies:
@@ -38,7 +38,7 @@ A `typescript` / `react` boilerplate bundled with `webpack`. Style and theme man
 
 - Remove old upstream and add your own:
   ```bash
-  git remote rm upstream
+  git remote rm origin
   git remote add upstream https://github.com/...
   ```
 
