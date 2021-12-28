@@ -1,11 +1,11 @@
 {
-  "name": "react-boilerplate",
+  "name": "Top10",
   "version": "0.0.1",
   "homepage": ".",
   "description": "A typescript / react boilerplate bundled with webpack",
   "main": "src/index.tsx",
-  "repository": "https://github.com/Groupe-Citypassenger-Inc/react-boilerplate",
-  "author": "CityPassenger",
+  "repository": "https://github.com/ChipolaThug/Top-10",
+  "author": "ChipolaThug",
   "private": true,
   "scripts": {
     "start": "webpack serve --mode development",

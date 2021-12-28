@@ -28,8 +28,8 @@ module.exports = {
       directory: path.join(__dirname, 'public'),
     },
     proxy: {
-      '/ws/**': { target: 'https://preprod.citypassenger.com', secure: false },
-      '/Accounts/**': { target: 'https://preprod.citypassenger.com', secure: false, headers: { host: 'preprod.citypassenger.com' } },
+      '/ws/**': { target: '', secure: false },
+      '/Accounts/**': { target: '', secure: false, headers: { host: '' } },
     },
     port: 3445,
   },

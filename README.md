@@ -1,21 +1,8 @@
-# React boilerplate
+# TOP 10
 
-A `typescript` / `react` boilerplate bundled with `webpack`. Style and theme management is handled by [Material UI](https://mui.com/).
-
-## Features
-
-- JS/TS hot reload
-- React state preservation
-- Css live reload
-- MUI theme management
+Début d'un projet solo inspiré du jeu du même nom 
 
 ## How to use
-
-- Clone the repository:
-
-  ```bash
-  git clone https://github.com/Groupe-Citypassenger-Inc/react-boilerplate PROJECT_NAME
-  ```
 
 - Install dependencies:
 
@@ -44,10 +31,6 @@ A `typescript` / `react` boilerplate bundled with `webpack`. Style and theme man
 
 Now you just have to develop your application 👌.
 
-## Development
-
-Refer to the [documentation](https://github.com/Groupe-Citypassenger-Inc/Documentation#comment-d%C3%A9velopper-des-projets-front-end-) for pre-requisites and good practices.
-
 ## Build
 
 - `yarn`
@@ -63,13 +46,6 @@ The project comes with a pre-configured eslint for `react` and `typescript`. The
 ## Proxy
 
 A dedicated proxy is used by the development server to request the CityPassenger pre-production. It configuration is specified in `webpack.config.js` :
-
-```js
-proxy: {
-      '/ws/**': { target: 'https://preprod.citypassenger.com', secure: false },
-      '/Accounts/**': { target: 'https://preprod.citypassenger.com', secure: false, headers: { host: 'preprod.citypassenger.com' } },
-    },
-```
 
 ## Theming
 
